@@ -2,6 +2,7 @@
 
 const express = require('express')
 
+const StartDb = require('./config/StartDb')
 const port = require('./config/config').PORT
 const server = express()
 
@@ -12,6 +13,9 @@ server.use('/', (req, res) => {
         message: 'Hello from Node-Express API Server, running on docker'
     })
 })
+
+//start n connect to mongoDB from mLab
+StartDb()
 
 server.listen(port, () => {
     console.log(`Server running at: ${port}`)
