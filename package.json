@@ -1,0 +1,22 @@
+{
+  "name": "graphql-node-express-mongo-docker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/server.js",
+  "scripts": {
+    "start":"node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "graphql",
+    "nodejs",
+    "expressjs",
+    "mongodb",
+    "docker"
+  ],
+  "author": {
+    "name": "Adi Vemuru",
+    "email": "vemuruadi@gmail.com"
+  },
+  "license": "MIT"
+}
