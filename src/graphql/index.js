@@ -23,7 +23,7 @@ const RootMutation = new GraphQLObjectType({
     description: 'default mutation from backend',
     fields: {
         addUser: UserMutation.create(),
-        updatedUser: UserMutation.update(),
+        updateUser: UserMutation.update(),
         deleteUser: UserMutation.delete()
     }
 })

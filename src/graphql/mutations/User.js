@@ -71,6 +71,7 @@ module.exports = {
                 },
             },
             resolve(parent, fields) {
+                //console.log(fields)
                 return UserResolver.update(fields);
             }
 

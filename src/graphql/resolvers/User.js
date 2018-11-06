@@ -46,9 +46,11 @@ class UserController {
 
      //Update the existing User record by Id
      update(data) {
-         return this.model.findOne({ _id: options.id })
+
+         return this.model.findOne({ _id: data.id })
             .exec()
             .then( (record) => {
+                //console.log(record)
                 Object.keys(data).map( field => {
                     record[field] = data[field]
                 })
